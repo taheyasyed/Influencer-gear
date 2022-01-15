@@ -1,0 +1,30 @@
+header {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 50px;
+}
+
+.heading {
+    font-family: 'Poppins',
+        sans-serif;
+    font-weight: 1000;
+    font-size: 2em;
+
+}
+
+.navbars {
+    font-family: 'Poppins',
+        sans-serif;
+    justify-content: space-between;
+    font-weight: 400;
+
+}
+
+.navbars a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+
+}
