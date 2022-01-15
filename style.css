@@ -88,18 +88,19 @@ h2 {
     font-family: 'Poppins',
         sans-serif;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     background-color: gainsboro;
     margin-top: 5%;
     margin-left: 100px;
     margin-right: 100px;
+
     /* grid-column-gap: 5px; */
 
 
 }
 
 .item {
-    border: 2px solid gradient(seagreen, wheat);
+    /* border: 2px solid gradient(seagreen, wheat); */
     margin-left: 50px;
     margin-right: 30px;
     background-color: white;
@@ -132,4 +133,34 @@ h2 {
     color: grey;
     font-size: 1em;
 
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Poppins',
+        sans-serif;
+    font-weight: 900;
+}
+
+.contact {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input img {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.input {
+    padding-top: 50px;
+    margin-right: 50px;
+}
+
+footer {
+    background-color: #120E43;
+    text-align: center;
+    color: white;
 }
