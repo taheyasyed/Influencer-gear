@@ -1,5 +1,9 @@
-header {
+body {
+    background-color: wheat;
+}
 
+/* header style */
+header {
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
@@ -26,6 +30,11 @@ header {
     color: black;
     padding-left: 10px;
 
+}
+
+.navbars a:hover {
+    background-color: brown;
+    color: cornsilk;
 }
 
 .title {
@@ -61,16 +70,25 @@ header {
 }
 
 .click {
-    background-color: seagreen;
+    background: linear-gradient(to right, #BF3325, #B4161B);
     height: 40px;
     width: 200px;
     border-radius: 50px;
-    color: black;
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    border: 2px solid wheat;
+    cursor: pointer;
+    transition: width 5sec;
+    transition-delay: 1sec;
 
 
+}
+
+.click:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
@@ -89,24 +107,20 @@ h2 {
         sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    background-color: gainsboro;
+    /* background-color: */
     margin-top: 5%;
     margin-left: 100px;
     margin-right: 100px;
-
-    /* grid-column-gap: 5px; */
-
-
 }
 
 .item {
-    /* border: 2px solid gradient(seagreen, wheat); */
     margin-left: 50px;
     margin-right: 30px;
-    background-color: white;
+    background-color: burlywood;
     margin-top: 30px;
     height: 500px;
     width: 300px;
+    margin-bottom: 30px;
 
 }
 
@@ -163,4 +177,55 @@ footer {
     background-color: #120E43;
     text-align: center;
     color: white;
+}
+
+/* media-query */
+/* for mobile-devices */
+@media only screen and (max-width:576px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .intro {
+        width: 50%;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .items {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbars {
+        display: none;
+    }
+
+    .influencer img {
+        width: 60%;
+        height: 8%;
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 150px; */
+        margin-top: 50px;
+    }
+}
+
+/* For tablet */
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .items {
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
 }
